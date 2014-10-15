@@ -1,0 +1,121 @@
+	<html>
+	<link type="text/css" rel="stylesheet" href="stylesheets.css"/>
+		<head>
+			<title>Arnfinn Redse</title>
+			
+			<!--And now, a nice little game I built with the help of CodeAcademy-->
+			
+			<script>
+			var userChoice = prompt("Do you choose rock, paper or scissors?");
+			var computerChoice = Math.random();
+			if (computerChoice < 0.34) {
+				computerChoice = "rock";
+			} else if(computerChoice <= 0.67) {
+				computerChoice = "paper";
+			} else {
+				computerChoice = "scissors";
+			} console.log("Computer: " + computerChoice);
+
+			userChoice;
+			computerChoice;
+
+			var compare = function(choice1, choice2) {
+			    if(choice1 === choice2) {
+			        return "The result is a tie";
+			    }
+			    else if (choice1 === "rock") {
+			        if (choice2 === "scissors") {
+			            return "rock wins";
+			        }
+			        else {
+			            return "paper wins";
+			        }
+			    }
+			    else if (choice1 ==="paper") {
+			        if (choice2 === "rock") {
+			            return "paper wins";
+			        }
+			        else {
+			            return "scissors wins";
+			        }
+			    }
+			    else if (choice1 === "scissors") {
+			        if (choice2 === "rock") {
+			            return "rock wins";
+			        }
+			        else {
+			            return "scissors wins";
+			        }
+			    }
+			};
+			compare(userChoice, computerChoice);
+			window.confirm(compare(userChoice, computerChoice));
+			</script>
+		</head>
+
+			<header> <img src="Headerphoto.jpg" style="width:100%">
+			</header>
+			
+		<nav>
+			<div id="menu">
+			<ul>
+			<li><a href="http://no.linkedin.com/pub/arnfinn-redse/35/570/212">LinkedIn</a></li>
+			<li><a href="http://www.uravok.no"> Choir music </a></li>
+			<li><a href="mailto:arnfinnredse@gmail.com">Contact</a></li>
+			</ul>
+			</div>
+		</nav>
+	    <h1><strong>My awesome homepage</strong></h1>
+		
+	<body>
+	    <aside class="additional-content">
+	    <img src="https://lh6.googleusercontent.com/-uNFZq4v_Du0/AAAAAAAAAAI/AAAAAAAAABI/206XDxlZI4s/photo.jpg" style="width:15rem" 
+		alt="Picture of a man named Arnfinn Redse, wearing a six pence and pilot shades and speaking into an iPhone. He is slim, 
+		with blond hair and blue eyes. in the photo he is wearing a black, long-sleeved t-shirt and a backpack. 
+		The picture includes the upper torso and head." >
+		<p>That's me!</p>
+		</aside>
+		
+		<section class="main-content">
+	   <p>I am a decade older than many of the students in this class, but I'm not the oldest one.<br>
+	      I currently live in Oslo and I am going to be a computer engineer.<br>
+	   </p>
+
+	    <p> <strong>Here are some more <em>fun facts</em> about me:</strong></p>
+	    <ul>
+	        <li>I was born in 1984
+	            <ul><li>Holy moly, I'll be 30 this year!</li></ul>
+	        </li>
+	        <li>I grew up in Ivory Coast</li>
+	        <li>I am a <a href="http://en.wikipedia.org/wiki/Third_culture_kid"> TCK </a> and an 
+				<a href="http://en.wikipedia.org/wiki/Missionary_kid"> MK</a></li>
+	        <li>Before I started studying computer engineering, I was a teacher and a freelance musician</li>
+	        <li>I once did backup vocals for 
+				<a href="http://1.bp.blogspot.com/-Ez3W2f-Ebc0/TxrHDAmOe4I/AAAAAAAAA4Y/iNxi63_qFp8/s1600/LIONEL+RICHIE.jpg"> Lionel Richie </a></li>
+	    </ul>
+	    <br><strong>I also have som interests: </strong>
+	    <ul>
+	        <li>Reading</li>
+	            <ol>						<!-- Look at my list within a list! --> 
+	                <li>Sci-Fi</li>
+                    <li>Adventure</li>	                    
+					<li>Crime and thrillers</li>
+	                <li>Anything about how the mind works or how humans learn.</li>
+	            </ol>
+   			<li>Singing and playing guitar</li>
+            <li>Drinking Coffee</li>
+			<li>Doing sports and working out</li>
+			<li>Coding html</li>
+        </ul>
+			
+	    <p> <h3> Net privacy and freedom of speech </h3> <br>
+			I think net privacy is a term most people do not understand. I've certainly learned a lot about the current lack of privacy <br> 
+			and how much information some of the largest companies on the planet have about me. Apple, Google and Facebook probably know <br>
+			more about me than anyone of my parents or close friends, and if I was a dissident in an authoritarian regime, that might be <br>
+			a huge problem. <br> George Orwell was closer to the mark than he had any reason to suspect. Technology is awesome but also <br>
+			carries with it some very real problems. Problems that most people <!-- Yes, I generalize… --> don't know about or ignore. <br>
+			I think we should think more about these issues, and I am looking forward to discussing them in class.
+		<p> <img src="http://cafe-chaos-fulda.de/wp-content/uploads/2014/04/1984-was-not-supposed-to-be-an-instruction-manual-31725.jpeg" width="100%" 			alt="picture of a person with a security camera for a head and the text 1984 was not meant to be an instruction manual!"></p>
+	</body>
+		<!-- By the way: The Codeacademy html course has been extremely helpful these first few weeks. I can't recommend it enough!-->
+	</html>
